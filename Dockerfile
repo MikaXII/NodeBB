@@ -10,6 +10,6 @@ ENV NODE_ENV=production \
 # nodebb setup will ask you for connection information to a redis (default), mongodb then run the forum
 # nodebb upgrade is not included and might be desired
 CMD node app --setup && npm start
-
+VOLUME /home/mikaxii/nodebb:/usr/src/app
 # the default port for NodeBB is exposed outside the container
 EXPOSE 4567
